@@ -32,13 +32,14 @@ public class TaskActivity extends AppCompatActivity implements TaskView {
 
     private TaskPresenter mPresenter;
     private List<String> mUrls;
-    private int mId = getIntent().getIntExtra("id", 0);
+    private int mId;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.task_activity);
+        mId = getIntent().getExtras().getInt("id");
         setPresenter();
         initViews();
     }

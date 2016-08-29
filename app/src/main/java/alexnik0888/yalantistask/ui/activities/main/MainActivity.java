@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
  * Main class for app.
  */
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     @BindView(R.id.drawer_layout) DrawerLayout mDrawer;
     @BindView(R.id.fab) FloatingActionButton mFab;
@@ -57,7 +57,9 @@ public class MainActivity extends AppCompatActivity
         });
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawer.setDrawerListener(toggle);
+        toggle.setDrawerIndicatorEnabled(false);
+        toggle.setHomeAsUpIndicator(R.drawable.ic_drawer_menu);
+        toggle.setToolbarNavigationClickListener(this);
         toggle.syncState();
         mNavView.setNavigationItemSelectedListener(this);
         setupViewPager(mPager);
@@ -112,5 +114,10 @@ public class MainActivity extends AppCompatActivity
         adapter.addFragment(TabFragment.createFragment(DbManager.STATE_DONE), getString(R.string.ended));
         adapter.addFragment(TabFragment.createFragment(DbManager.STATE_WAITING), getString(R.string.waiting));
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    public void onClick(View v) {
+        mDrawer.openDrawer(GravityCompat.START);
     }
 }

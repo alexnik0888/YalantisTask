@@ -33,15 +33,15 @@ public class DbManager {
         return mRealm.where(Task.class).equalTo("id", id).findFirst();
     }
 
+    public DbManager() {
+        mRealm = Realm.getDefaultInstance();
+    }
+
     public List<Task> getTasks(String state){
-        setmRealm();
         String name = getStateName(state);
         return mRealm.where(Task.class).equalTo("state.name", name).findAll();
     }
 
-    public void setmRealm() {
-        mRealm = Realm.getDefaultInstance();
-    }
 
     private String getStateName (String state){
         switch (state){
