@@ -33,7 +33,7 @@ public class Task extends RealmObject {
     @SerializedName("state")
     private State state;
     @SerializedName("ticket_id")
-    private int ticketId;
+    private String ticketId;
     @SerializedName("files")
     private RealmList<File> files = new RealmList<File>();
     @SerializedName("performers")
@@ -210,7 +210,7 @@ public class Task extends RealmObject {
      * @return
      *     The ticketId
      */
-    public int getTicketId() {
+    public String getTicketId() {
         return ticketId;
     }
 
@@ -219,7 +219,7 @@ public class Task extends RealmObject {
      * @param ticketId
      *     The ticket_id
      */
-    public void setTicketId(int ticketId) {
+    public void setTicketId(String ticketId) {
         this.ticketId = ticketId;
     }
 

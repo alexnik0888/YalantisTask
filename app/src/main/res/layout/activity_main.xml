@@ -21,26 +21,19 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
+        app:itemTextColor="@android:color/black"
         app:menu="@menu/activity_main_drawer">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_margin="16dp"
-        android:orientation="vertical">
         <TextView
-            android:id="@+id/footer_item_1"
+            android:id="@+id/drawer_footer_links"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="start"
-            android:text="@string/nav_footer_1" />
-        <TextView
-            android:id="@+id/footer_item_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="start"
-            android:text="@string/nav_footer_2" />
-    </LinearLayout>
+            android:layout_gravity="bottom"
+            android:linksClickable="true"
+            android:paddingBottom="@dimen/default_padding"
+            android:paddingLeft="@dimen/default_padding"
+            android:paddingRight="@dimen/default_padding"
+            android:textColor="@android:color/black"
+            android:text="@string/nav_footer_string" />
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

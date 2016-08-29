@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CE-1257218</string>
+    <string name="app_name">e-contact</string>
     <string name="description">Open manhole (near the billboard), the area where trams turn on Mira avenue from Donetsk highway</string>
     <string name="head">Utilities</string>
     <string name="state">In process</string>
@@ -11,4 +11,8 @@
     <string name="registered_date">26 february 2016</string>
     <string name="deadline_date">29 february 2016</string>
     <string name="responsible_name">Dnipropetrovsk MVK()</string>
+
+
+    <string name="nav_footer_string">Made with love\n<a href="http://www.itruh.dp.ua/">IT Ruh Dnipro</a> and <a href="https://yalantis.com/">Yalantis</a></string>
+
 </resources>

@@ -1,6 +1,5 @@
 package alexnik0888.yalantistask.ui.fragments.tab;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +13,6 @@ import java.util.List;
 import alexnik0888.yalantistask.R;
 import alexnik0888.yalantistask.adapters.FragRecyclerAdapter;
 import alexnik0888.yalantistask.model.Task;
-import alexnik0888.yalantistask.ui.activities.task.TaskActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

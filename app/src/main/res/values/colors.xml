@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#567dac</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#ffffff</color>
-    <color name="background_color">#ececec</color>
+    <color name="colorAccent">#ff9c26</color>
+    <color name="white">#ececec</color>
     <color name="orange">#FFFFA930</color>
+    <color name="light_blue">#ccd8e7</color>
 </resources>
