@@ -6,4 +6,10 @@
     <color name="white">#ececec</color>
     <color name="orange">#FFFFA930</color>
     <color name="light_blue">#ccd8e7</color>
+    <!-- Tab item colors-->
+    <color name="colorTvTitleText">#5D5D5D</color>
+    <color name="colorTvAddressText">#898989</color>
+    <color name="colorCardTvDate">#8F8F8F</color>
+    <color name="colorCardSeparator">#EFEFEF</color>
+    <color name="colorLikesIv">#C3C3C3</color>
 </resources>

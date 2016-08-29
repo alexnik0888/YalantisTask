@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity
     private void initView(){
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle(R.string.all_questions);
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

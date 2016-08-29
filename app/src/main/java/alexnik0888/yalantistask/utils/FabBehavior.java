@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by Alex on 29.08.2016.
+ * Behavior for hide fab while scrolling down
  */
 public class FabBehavior extends FloatingActionButton.Behavior {
     private static boolean sReactOnScroll = true;

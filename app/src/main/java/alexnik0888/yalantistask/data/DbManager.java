@@ -13,7 +13,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Alex on 13.08.2016.
+ * Class for work with db
  */
 public class DbManager {
 

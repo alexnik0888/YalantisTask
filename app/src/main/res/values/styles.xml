@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <!-- Task styles-->
     <style name="MainTextTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -15,18 +15,74 @@
         <item name="android:textColor">@android:color/black</item>
         <item name="android:clickable">true</item>
     </style>
-
     <style name="LeftTextTheme" parent="MainTextTheme">
         <item name="android:textColor">@android:color/darker_gray</item>
         <item name="android:layout_alignParentLeft">true</item>
     </style>
-
     <style name="RightTextTheme" parent="MainTextTheme">
         <item name="android:layout_alignParentRight">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- Tab item styles-->
+    <style name="CardTvTitleStyle">
+        <item name="android:layout_marginTop">@dimen/tv_title_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/tv_title_margin_left</item>
+        <item name="android:textSize">@dimen/tv_title_text_size</item>
+        <item name="android:textColor">@color/colorTvTitleText</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="CardTvAddressStyle">
+        <item name="android:layout_marginLeft">@dimen/tv_address_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/tv_address_margin_top</item>
+        <item name="android:textColor">@color/colorTvAddressText</item>
+        <item name="android:textSize">@dimen/tv_address_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CardTvDateStyle">
+        <item name="android:layout_marginLeft">@dimen/tv_date_margin_left</item>
+        <item name="android:layout_marginBottom">@dimen/tv_date_margin_bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textSize">@dimen/tv_date_text_size</item>
+        <item name="android:textColor">@color/colorCardTvDate</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardSeparatorStyle">
+        <item name="android:layout_marginLeft">@dimen/view_separator_margin_left</item>
+        <item name="android:textColor">@color/colorCardSeparator</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="CardLikeIvStyle">
+        <item name="android:layout_width">@dimen/iv_image_size</item>
+        <item name="android:layout_height">@dimen/iv_image_size</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/iv_like_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/iv_margin_left</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CardsLikesTvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/iv_likes_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/iv_likes_margin_left</item>
+        <item name="android:textSize">@dimen/iv_likes_text_size</item>
+        <item name="android:textColor">@color/colorLikesIv</item>
+    </style>
+
+    <style name="CardPaperIvStyle">
+        <item name="android:layout_width">@dimen/iv_image_size</item>
+        <item name="android:layout_height">@dimen/iv_image_size</item>
+        <item name="android:layout_marginTop">@dimen/iv_paper_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/iv_paper_margin_left</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>

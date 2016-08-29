@@ -12,7 +12,7 @@ import retrofit2.http.Query;
 import rx.Observable;
 
 /**
- * Created by Alex on 12.08.2016.
+ * Service for connection to Api.
  */
 public interface ApiService  {
     String BASE_URL = "http://dev-contact.yalantis.com/rest/v1/";

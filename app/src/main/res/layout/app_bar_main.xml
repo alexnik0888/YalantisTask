@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:rippleColor="@color/white"
-        android:src="@drawable/ic_fab"/>
+        android:src="@drawable/ic_fab"
+        app:layout_behavior="alexnik0888.yalantistask.utils.FabBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

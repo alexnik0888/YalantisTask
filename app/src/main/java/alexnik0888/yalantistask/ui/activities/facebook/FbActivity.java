@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Alex on 12.08.2016.
+ * Facebook activity class
  */
 public class FbActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //TODO class and layout
 
 
     }

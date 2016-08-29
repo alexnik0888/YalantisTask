@@ -23,7 +23,6 @@
         <activity
             android:name=".ui.activities.main.MainActivity"
             android:screenOrientation="portrait"
-            android:label="@string/all_questions"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

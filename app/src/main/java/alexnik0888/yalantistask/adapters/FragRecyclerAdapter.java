@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -39,14 +38,11 @@ public class FragRecyclerAdapter extends RecyclerView.Adapter<FragRecyclerAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        //TODO getData
         final Task model = mModel.get(position);
         holder.mCount.setText(String.valueOf(model.getLikesCounter()));
         holder.mTitle.setText(model.getCategory().getName());
-        holder.mAdress.setText(DateHelper.getFullAddress(model));
-
-
-
+        holder.mAddress.setText(DateHelper.getFullAddress(model));
+        holder.mDate.setText(DateHelper.getStringDataFromMillis(model.getCreatedDate()));
         holder.mTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,11 +59,10 @@ public class FragRecyclerAdapter extends RecyclerView.Adapter<FragRecyclerAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        @BindView(R.id.item_img) ImageView mImage;
         @BindView(R.id.item_title) TextView mTitle;
         @BindView(R.id.item_like_count) TextView mCount;
         @BindView(R.id.item_date) TextView mDate;
-        @BindView(R.id.item_address) TextView mAdress;
+        @BindView(R.id.item_address) TextView mAddress;
         @BindView(R.id.task_item) CardView mTask;
 
         public ViewHolder(View itemView) {

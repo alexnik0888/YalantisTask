@@ -7,7 +7,7 @@ import java.util.Locale;
 import alexnik0888.yalantistask.model.Task;
 
 /**
- * Created by Alex on 12.08.2016.
+ * Class for work with date
  */
 public class DateHelper {
     private static final String FULL_DATE_FORMAT = "d MMMM yyyy";
