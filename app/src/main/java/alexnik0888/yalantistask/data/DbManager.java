@@ -5,6 +5,7 @@ import android.util.Log;
 import java.util.List;
 
 import alexnik0888.yalantistask.adapters.FragRecyclerAdapter;
+import alexnik0888.yalantistask.model.FBProfile;
 import alexnik0888.yalantistask.model.Task;
 import alexnik0888.yalantistask.utils.ApiService;
 import io.realm.Realm;
@@ -83,7 +84,11 @@ public class DbManager {
                         adapter.notifyDataSetChanged();
                     }
                 });
+    }
 
-
+    public void writeProfile(FBProfile profile){
+        mRealm.beginTransaction();
+        mRealm.copyToRealmOrUpdate(profile);
+        mRealm.commitTransaction();
     }
 }

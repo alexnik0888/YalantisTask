@@ -18,6 +18,10 @@
 
     <string name="menu_filter">Filter</string>
 
+    <string name="login">Профіль</string>
+    <string name="facebook_app_id">1231413251235</string>
+    <string name="your_name">Ваше ім\'я</string>
+
     <string name="all_questions">Всі звернення</string>
     <string name="map_questions">Звернення на мапі</string>
     <string name="enter_ac">Увійти в акаунт</string>
