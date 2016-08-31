@@ -13,6 +13,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.Profile;
 import com.facebook.ProfileTracker;
+import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.facebook.login.widget.ProfilePictureView;
@@ -46,6 +47,7 @@ public class FbActivity extends AppCompatActivity {
 
     private void init(){
         FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
         if(getSupportActionBar()!=null) {

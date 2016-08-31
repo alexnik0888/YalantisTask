@@ -25,7 +25,6 @@
 
             <TextView
                 android:id="@+id/task_head"
-                android:text="@string/head"
                 style="@style/MainTextTheme"
                 android:layout_marginTop="0dp"
                 android:textSize="@dimen/big_text_size"
@@ -57,7 +56,6 @@
 
                     <TextView
                         android:id="@+id/created_date"
-                        android:text="@string/created_date"
                         style="@style/RightTextTheme"
                         android:onClick="onViewClick"/>
                 </RelativeLayout>
@@ -72,7 +70,6 @@
                         android:onClick="onViewClick"/>
                     <TextView
                         android:id="@+id/registered_date"
-                        android:text="@string/registered_date"
                         style="@style/RightTextTheme"
                         android:onClick="onViewClick"/>
                 </RelativeLayout>
@@ -87,7 +84,6 @@
                         android:onClick="onViewClick"/>
                     <TextView
                         android:id="@+id/deadline_date"
-                        android:text="@string/deadline_date"
                         style="@style/RightTextTheme"
                         android:onClick="onViewClick"/>
                 </RelativeLayout>
@@ -102,14 +98,12 @@
                         android:onClick="onViewClick"/>
                     <TextView
                         android:id="@+id/responsible"
-                        android:text="@string/responsible_name"
                         style="@style/RightTextTheme"
                         android:onClick="onViewClick"/>
                 </RelativeLayout>
 
                 <TextView
                     android:id="@+id/descriprion"
-                    android:text="@string/description"
                     style="@style/MainTextTheme"
                     android:layout_marginTop="@dimen/text_top_margin"
                 android:onClick="onViewClick"/>
